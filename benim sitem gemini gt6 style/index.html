@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MON SITE FIVEM</title>  <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #240046 0%, #10002b 50%, #050014 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* GTA VI Neon Arka Plan Işıkları */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: #ff007f;
+            filter: blur(150px);
+            opacity: 0.35;
+            top: 15%;
+            left: 15%;
+            border-radius: 50%;
+        }
+
+        body::after {
+            content: '';
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: #00f0ff;
+            filter: blur(150px);
+            opacity: 0.25;
+            bottom: 15%;
+            right: 15%;
+            border-radius: 50%;
+        }
+
+        /* Cam Efektli Ana Kart */
+        .container {
+            background: rgba(15, 5, 29, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 0, 128, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 550px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(255, 0, 128, 0.25), inset 0 0 15px rgba(0, 240, 255, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, #ff007f, #ff75c3, #00f0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 25px rgba(255, 0, 128, 0.5);
+            margin: 15px 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            margin: 15px 0;
+        }
+
+        /* Neon Çizgiler */
+        .neon-hr {
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(90deg, transparent, #ff007f, #00f0ff, transparent);
+            border: none;
+            margin: 20px 0;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn-group a {
+            text-decoration: none;
+        }
+
+        .btn {
+            padding: 14px 32px;
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-packs {
+            background: linear-gradient(45deg, #7928ca, #ff0080);
+            box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+        }
+
+        .btn-packs:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 0 35px rgba(255, 0, 128, 0.9);
+        }
+
+        .btn-image {
+            background: linear-gradient(45deg, #0070f3, #00dfd8);
+            box-shadow: 0 0 20px rgba(0, 223, 216, 0.5);
+        }
+
+        .btn-image:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 0 35px rgba(0, 223, 216, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <hr class="neon-hr">
+        <h1>BIENVENUE SUR MON SITE FIVEM</h1> 
+        <hr class="neon-hr">
+
+        <p>LES GUIDES FIVEM SONT ICI</p>
+        <hr class="neon-hr">
+
+        <div class="btn-group">
+            <a href="packs.html" target="_blank"> 
+                <button class="btn btn-packs">PACKS</button>
+            </a>
+
+            <a href="image.html" target="_blank"> 
+                <button class="btn btn-image">IMAGE</button>
+            </a>
+        </div>
+        <hr class="neon-hr">
+    </div>
+
+</body>
+</html>
